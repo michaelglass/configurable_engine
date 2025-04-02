@@ -44,7 +44,7 @@ class Configurable < ActiveRecord::Base
     when 'boolean'
       [true, 1, "1", "t", "true"].include?(value)
     when 'decimal'
-      BigDecimal.new(value.to_s)
+      BigDecimal(value.to_s)
     when 'integer'
       value.to_i
     when 'list'

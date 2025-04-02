@@ -80,7 +80,7 @@ describe Configurable do
       end
 
       it "should typecast the value" do
-        Configurable.conversion_rate.should == BigDecimal.new('1.2')
+        Configurable.conversion_rate.should == BigDecimal('1.2')
       end
     end
 
