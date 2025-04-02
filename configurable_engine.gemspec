@@ -16,14 +16,14 @@ Gem::Specification.new do |spec|
     "README.md"
   ]
 
-  spec.files         = Dir["*.txt", "*.md", "lib/**/*", "app/**/*", "config/**/*"] - ['config/cucumber.yml'] 
+  spec.files         = Dir["*.txt", "*.md", "lib/**/*", "app/**/*", "config/**/*"] - ['config/cucumber.yml']
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
 
   spec.homepage = "http://github.com/paulca/configurable_engine"
   spec.licenses = ["MIT"]
   spec.require_paths = ["lib"]
-  spec.rubygems_version = "2.0.3"
-  spec.summary = "Database-backed configuration for Rails 3, with defaults from config file."
+  spec.rubygems_version = "3.5.22"
+  spec.summary = "Database-backed configuration for Rails 7, with defaults from config file."
 
-  spec.add_dependency "rails", ">3.1.0"
+  spec.add_dependency "rails", ">=7.0.0", "<8.0.0"
 end

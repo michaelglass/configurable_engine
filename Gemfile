@@ -1,3 +1,20 @@
-instance_eval File.read(File.expand_path('../gemfiles/Gemfile.base', __FILE__))
+# frozen_string_literal: true
 
-gem 'rails', '~>3.2.0'
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in live_fixtures.gemspec
+gemspec
+
+# dev dependencies
+gem 'bundler'
+gem 'capybara'
+gem 'cucumber-rails', require: false
+gem 'database_cleaner'
+gem 'pry-byebug'
+gem 'rake'
+gem 'rspec'
+gem 'rspec-rails'
+gem 'rubocop'
+gem 'rubocop-rspec'
+gem 'sqlite3'
+gem 'yard'
